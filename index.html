@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- box icon cdn -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>      
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Font Awesome CDN  -->
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 </head>
 
 <body>
@@ -20,52 +24,83 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" style="--i:1">Home</a></li>
+                <li><a href="#" style="--i:2">Portfolio</a></li>
+                <li><a href="#" style="--i:3">Contact</a></li>
             </ul>
         </nav>
+            
+            
     </div>
     <div class="container">
         <div class="left-side">
             <div>
                 <h1>Amir Gholami <br> <span> web developer</span></h1>
-                
+
                 <p>Hello! I'm Amir Gholami, a 17 years old web developer from Iran. <br> I have skills in HTML , CSS and
                     JavaScript <br> with enthusiasm and readiness to work,I'm eager to collaborate on exciting web
                     project </p>
-                    <div class="btn-section">
-                        <button class="btn-1">Contact me</button>
-                        <button class="btn-2">Browse portfolio</button>
+                <div class="btn-section">
+                    <div class="Contact-popup" id="popup">
+                        <button class="close-icon" onclick="closePopup()">
+                            <i class='fa fa-close'></i>
+                        </button>
+                        <div class="contact-id">
+                            <h3>Telegram:</h3>
+                            <a href="https://t.me/Amiirgh78">
+                                <i class='bx bxl-telegram contact-telegram'></i>
+                                <h6>@Amiirgh78</h6>
+                            </a>
+                        </div>
+                        <div class="contact-id">
+                            <h3>Phone:</h3>
+                            <a href="+989376902126">
+                                <i class='bx bx-phone phone'></i>
+                                <h6>+989376902126</h6>
+                            </a>
+                        </div>
+                        <div class="contact-id">
+                            <h3>Email:</h3>
+                            <a href="amiirgh78@gmail.com">
+                                <i class='bx bx-envelope'></i>
+                                <h6>amiirgh78@gmail.com</h6>
+                            </a>
+                        </div>
                     </div>
+                    <button class="btn-1" onclick="openPopup()">Contact me</button>
+
+                    <button class="btn-2">Browse portfolio</button>
+                    
+                </div>
             </div>
         </div>
         <div class="right-side">
             <div class="circle"></div>
-            <img src="./img/1698308097226.jpg" alt="">
+            <img  src="./img/1698308097226.jpg" alt="">
         </div>
     </div>
     <footer class="footer">
         <div class="social-media">
-            <a href="https://www.linkedin.com/in/amir-gholami-5928a728b">
-                <i class='bx bxl-linkedin linkedin' ></i>
+            <a style="--i:1"  href="https://www.linkedin.com/in/amir-gholami-5928a728b">
+                <i class='bx bxl-linkedin linkedin'></i>
             </a>
-            <a href="https://github.com/AmirGholami78">
+            <a style="--i:2" href="https://github.com/AmirGholami78">
                 <i class='bx bxl-github github'></i>
             </a>
-            <a href="https://t.me/Amiirgh78">
+            <a style="--i:3"  href="https://t.me/Amiirgh78">
                 <i class='bx bxl-telegram telegram'></i>
             </a>
 
-            <a href="+989376902126">
+            <a  style="--i:4" href="+989376902126">
                 <i class='bx bx-phone phone'></i>
             </a>
-            <a href="https://instagram.com/amirghdev?igshid=NTc4MTIwNjQ2YQ==">
+            <a style="--i:5"  href="https://instagram.com/amirghdev?igshid=NTc4MTIwNjQ2YQ==">
                 <i class='bx bxl-instagram instagram'></i>
             </a>
         </div>
         <p class="copyRight">© 2023 | All rights reserved , Design by Amir Gholami</p>
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
